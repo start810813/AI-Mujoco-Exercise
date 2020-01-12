@@ -8,6 +8,18 @@
 ### 下載Mujoco
 1. 請依照自己的電腦作業系統下載[mujoco](https://www.roboti.us/index.html)
 > 我們使用200的版本(windows貌似只支援到150)，若下載不同版本的mujoco，以下設定路徑的資料夾名稱會不一樣，請注意並自行替換！
+```shell
+# 建立.mujoco資料夾
+$ cd ~
+$ mkdir .mujoco
+```
+> windows的話建議放在C:\users\ {使用者名稱}\下。不過放哪也不是太大的重點，只要環境變數指到該路徑即可。
+```
+請把下載下來的檔案解壓縮，
+並將資料夾名稱改為mujoco200 (若為150版本請改名為mjpro150)，
+放到 .mujoco資料夾內
+```
+
 2. 申請[簽證](https://www.roboti.us/license.html)，僅30天試用期。
 > 輸入姓名、信箱、ComputerID則須透過下載他的執行檔得知。得到序號後再貼上來。
 ```shell
@@ -16,13 +28,15 @@
 $ chmod 777 getid_osx
 $ ./launch getid_osx
 ```
-3. 登錄完成後會將mjkey.txt寄到信箱，請下載下來放到 ~/.mujoco 及 ~/.mujoco/mujoco200/bin這兩個位置
+3. 登錄完成後會將mjkey.txt寄到信箱，請下載下來放到 ~/.mujoco 及 ~/.mujoco/mujoco200/bin這兩個位置。
 ```shell
 # 先切到mjkey.txt所在資料夾
+$ cd [你mjkey.txt的路徑]
 $ cp mjkey.txt ~/.mujoco
 $ cp mjkey.txt ~/.mujoco/mujoco200/bin
 # 當然你也可以直接用文件管理器直接貼過去
 ```
+
 4. 添加環境變數
 > 在我的電腦中，使用bashrc 以及 zshrc，因此兩個都添加環境變數。使用vim文字編輯工具。
 ```shell
@@ -55,7 +69,7 @@ $ cd mujoco-py
 $ pip install -e .
 # 這裡若遇到錯誤，則缺什麼就裝什麼。
 ```
-> windows的anaconda環境應在C:\Users\使用者名稱\anaconda3\envs\mujoco-gym
+> windows的anaconda環境應在C:\Users\{使用者名稱}\anaconda3\envs\mujoco-gym
 > windows的朋友請使用pip install mujoco-py==1.50.1.68，版本太新是無法使用的！這算是一個坑。
 ----
 ### 安裝GYM
@@ -97,6 +111,7 @@ $ brew install cmake openmpi
 # Ubuntu
 $ sudo apt-get update && sudo apt-get install cmake libopenmpi-dev python3-dev zlib1g-dev
 ```
+> windows好像不用安裝就可以執行，不知原因。
 2. 安裝baselines套件
 ```shell
 # 若無tensorflow請先安裝
