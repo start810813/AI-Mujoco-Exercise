@@ -116,3 +116,10 @@ $ pip install stable-baselines[mpi]
 ```
 ----
 ### 到這裡就算全部安裝完成了！恭喜！
+### Reference
+1. [Mujoco](http://www.mujoco.org/)
+2. [Mujoco-py](https://github.com/openai/mujoco-py)
+3. [baselines](https://github.com/openai/baselines)
+4. [stable-baselines](https://stable-baselines.readthedocs.io/en/master/guide/install.html)
+5. [GYM](https://gym.openai.com/)
+6. [chenshiyu:Tutorial-Installation-and-Configuration-of-MuJoCo-Gym-Baselines](https://www.chenshiyu.top/blog/2019/06/19/Tutorial-Installation-and-Configuration-of-MuJoCo-Gym-Baselines/)
