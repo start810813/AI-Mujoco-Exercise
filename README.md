@@ -130,6 +130,8 @@ $ pip install stable-baselines[mpi]
 ```
 ----
 ### 到這裡就算全部安裝完成了！恭喜！
+> 訓練出來的模型為zip檔！請不要解壓縮他！讓程式直接讀取即可
+
 ### Reference
 1. [Mujoco](http://www.mujoco.org/)
 2. [Mujoco-py](https://github.com/openai/mujoco-py)
