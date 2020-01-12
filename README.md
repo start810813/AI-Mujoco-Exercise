@@ -8,11 +8,10 @@
 ### 下載Mujoco
 1. 請依照自己的電腦作業系統下載[mujoco](https://www.roboti.us/index.html)
 > 我們使用200的版本(windows貌似只支援到150)，若下載不同版本的mujoco，以下設定路徑的資料夾名稱會不一樣，請注意並自行替換！
-![image](picture or gif url)
 2. 申請[簽證](https://www.roboti.us/license.html)，僅30天試用期。
-![image](picture or gif url)
+> 輸入姓名、信箱、ComputerID則須透過下載他的執行檔得知。得到序號後再貼上來。
 ```shell
-# 若Linux或Osx 下載getKey檔案時無法執行，試試看
+# 若Linux或Osx 下載getid檔案時無法執行，試試看
 # 先切到getid_osx所在資料夾
 $ chmod 777 getid_osx
 $ ./launch getid_osx
