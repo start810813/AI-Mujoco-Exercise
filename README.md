@@ -23,10 +23,10 @@ $ mkdir .mujoco
 2. 申請[簽證](https://www.roboti.us/license.html)，僅30天試用期。
 > 輸入姓名、信箱、ComputerID則須透過下載他的執行檔得知。得到序號後再貼上來。
 ```shell
-# 若Linux或Osx 下載getid檔案時無法執行，試試看
-# 先切到getid_osx所在資料夾
-$ chmod 777 getid_osx
+# 先切到getid_osx所在資料夾，再執行
 $ ./launch getid_osx
+# 若Linux或Osx 下載getid檔案時無法執行，試試看
+$ chmod 777 getid_osx
 ```
 3. 登錄完成後會將mjkey.txt寄到信箱，請下載下來放到 ~/.mujoco 及 ~/.mujoco/mujoco200/bin這兩個位置。
 ```shell
@@ -70,6 +70,7 @@ $ pip install -e .
 # 這裡若遇到錯誤，則缺什麼就裝什麼。
 ```
 > windows的anaconda環境應在C:\Users\{使用者名稱}\anaconda3\envs\mujoco-gym
+
 > windows的朋友請使用pip install mujoco-py==1.50.1.68，版本太新是無法使用的！這算是一個坑。
 ----
 ### 安裝GYM
